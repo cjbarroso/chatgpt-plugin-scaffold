@@ -1,0 +1,6 @@
+{
+    "nombre": "SumarPlugin",
+    "version": "1.0.0",
+    "descripcion": "Plugin para ChatGPT que permite sumar dos números pasados como parámetros a la función llamada 'sumar'."
+  }
+  

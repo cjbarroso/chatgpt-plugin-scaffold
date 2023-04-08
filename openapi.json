@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Sumar API",
+      "version": "1.0.0",
+      "description": "Una API simple para sumar dos números utilizando el plugin SumarPlugin en ChatGPT."
+    },
+    "paths": {
+      "/sumar": {
+        "post": {
+          "summary": "Sumar dos números",
+          "description": "Suma dos números pasados como parámetros.",
+          "operationId": "sumar",
+          "requestBody": {
+            "description": "Parámetros para sumar",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "numero1": {
+                      "type": "number",
+                      "description": "Primer número a sumar"
+                    },
+                    "numero2": {
+                      "type": "number",
+                      "description": "Segundo número a sumar"
+                    }
+                  },
+                  "required": ["numero1", "numero2"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Suma exitosa",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "resultado": {
+                        "type": "number",
+                        "description": "El resultado de la suma"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,6 @@
+bucket_name      = "nombre-del-bucket"
+path_to_manifest = "ruta/al/manifest.json"
+path_to_openapi  = "ruta/al/openapi.json"
+path_to_lambda   = "ruta/al/lambda.zip"
+lambda_runtime   = "runtime-de-lambda"
+lambda_handler   = "manejador-de-lambda"
